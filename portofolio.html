@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Hafid Arsyan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content" id="home">
+        <h1>Selamat Datang Di Website Personal Portofolio</h1>
+        <button class="scroll-button" onclick="scrollToSection('about')">Visit My Bio</button>
+    </div>
+
+    <section id="about">
+        <div class="about-container">
+            <img src="ft.jpeg" alt="About Me" class="about-photo">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <h3> Hi, my name is Hafid Rhafi Arsyan</h3>
+                <p>
+                    I am from the city of Surakarta graduate of Duta Bangsa University. I have an interest in the field of Internet of Thinking and Web Developer. The product I have made is Rosus which uses an Esp 32 Super mini, mpu sensor. And I am also a mentor at SMK 2 Surakarta in the field of Internet of Think. I also created a Gaoxy mobile web project and I also have skills for 3D design using Tinkercad.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>My Skills</h2>
+        <p>Discover the services we offer to our clients.</p>
+        <div class="card-container">
+            <div class="card">
+                <img src="iot.jpg" alt="Service 1" class="card-image">
+                <div class="card-content">
+                    <h3>Service 1</h3>
+                    <p>Internet Of Think.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="web.jpg" alt="Service 2" class="card-image">
+                <div class="card-content">
+                    <h3>Service 2</h3>
+                    <p>Web Mobile Developer.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tink.jpg" alt="Service 3" class="card-image">
+                <div class="card-content">
+                    <h3>Service 3</h3>
+                    <p>3D Design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to get in touch? Fill out the form below!</p>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>    
+        <div class="social-media">
+            <p>Follow Me:</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/hafid-23" target="_blank" class="social-icon">
+                    <img src="github.png" alt="Facebook">
+                </a></li>
+                <li><a href="https://www.instagram.com/hafid.rhsyan_/profilecard/?igsh=MTdxa2Zkb2M2czYzZQ==" target="_blank" class="social-icon">
+                    <img src="ig.png" alt="Instagram">
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/hafid-arsyan-792226259" target="_blank" class="social-icon">
+                    <img src="in.png" alt="Twitter">
+                </a></li>
+                <li><a href="https://wa.me/6288226901530" target="_blank" class="social-icon">
+                    <img src="wa.png" alt="Twitter">
+                </a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 HafidArs. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
